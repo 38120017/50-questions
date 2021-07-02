@@ -1,0 +1,14 @@
+ 
+a = input ().split() 
+b ="" 
+e = a[1]
+for i in a[0]:
+   if i.isdigit():
+      b+=i 
+if len(b)!=2:
+   b = str(0)+b 
+print (b)
+c = {"Jan":'01', "Feb":'02', "Mar":'03', "Apr":'04', "May":'05', "Jun":'06', "Jul":'07', "Aug":'08', "Sep":'09', "Oct":'10',"Nov":'11',"Dec":'12'}
+d = c[e]
+y = a[2]
+print (y+"-"+ d+"-"+b)
