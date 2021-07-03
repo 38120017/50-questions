@@ -1,0 +1,10 @@
+import datetime  
+date,month,year= input().split("#") 
+if date==str(31):
+   date=30
+   d = datetime.date(int(year),int(month),int(date)). weekday ()
+   d =d+1
+else:
+   d = datetime.date(int(year),int(month),int(date)). weekday ()
+week = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'] 
+print(week[d])
